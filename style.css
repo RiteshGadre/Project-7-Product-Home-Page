@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.logo img{
+    display: inline-block;
+    width: 10rem;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5rem;
+}
+
+.nav-items .nav-item{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.nav-item{
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.nav-end img{
+    display: inline-block;
+    width: 20rem;
+}
+
+.fa-solid {
+    display: none;
+}
+
+/* Intro Section */
+.intro-section{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    row-gap: 1rem; 
+    margin: 0 2rem;
+    overflow-x: hidden;
+}
+
+/* Left Section */
+.left-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    flex: 1;
+}
+
+.left-section h3{
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.left-section h3 img{
+    width: 4.5rem;
+    margin-left: 1.5rem;
+}
+
+.left-section h1{
+    font-size: 4.5rem;  
+    font-family: 'Poppins', sans-serif; 
+}
+
+.sub-headlines{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.sub-headline{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    gap: 1.5rem;
+}
+
+.sub-headline img{
+    width: 2.5rem;
+    padding: .5rem;
+    background-color: #ff6347;
+    border-radius: 3rem;
+}
+
+.text{
+    font-size: 1.2rem;
+    max-width: 57rem;
+}
+
+.action-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 3rem;
+
+}
+
+.action-btn{
+    outline: none;
+    border: none;
+    background-color: tomato;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+
+/* Right Section */
+.right-section{
+    padding: 0;
+    
+}
+
+.headphone-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 8rem;
+}
+
+.discount {
+    position: relative;
+    top: 7rem;
+    left: 8rem;
+    width: 10rem;
+    filter: drop-shadow(5px 5px 1px rgba(0,0,0,0.5));
+}
+
+.discount-content {
+    position: relative;
+    margin-top: 20rem;
+    margin-left: 7rem;
+    top: 0rem;
+    left: -7rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.discount-content h4{
+    position: relative;
+    top: 0.6rem;
+    left: 1rem;
+    font-size: 1.3rem;
+}
+
+.headphone {
+    width: 33rem;
+    position: relative;
+    right: 13rem;
+    z-index: -3;
+}
+
+.dots {
+    display: flex;
+    position: relative;
+    gap: 1.7rem;
+    top: 1rem;
+    left: 14.5rem;
+}
+
+.yellow-dot{
+    height: 20px;
+    width: 20px;
+    background-color: #ffff00;
+    border-radius: 50%;
+}
+
+.tomato-dot{
+    height: 20px;
+    width: 20px;
+    background-color: #ff6347;
+    border-radius: 50%;
+}
+
+.black-dot{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.right-action-btn {
+    background-color: tomato;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 2rem;
+    position: relative;
+    left: 13.4rem;
+    top: 3rem;
+    outline: none;
+    border: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+   
+    nav{
+        justify-content: space-between;
+        margin: 0rem 2rem;
+    }
+    .nav-items{
+        display: none;
+    }
+
+    .nav-end{
+        display: none;
+    }
+
+    .fa-solid {
+        display: inline-block;
+        font-size: 3rem;
+    }
+
+    .intro-section{
+        display: flex;
+        flex-direction: column;
+        height: 100rem;
+        gap: 4rem;
+    }
+
+    .left-section{
+        position: relative;
+        top: 1rem;
+    }
+    .right-section{
+        order: -1;
+        margin-left: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .headphone-div {
+        position: relative;
+        width: 47rem;
+        left: 0rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dots {
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        margin-left: 5rem;
+    }
+
+    .right-action-btn{
+        position: relative;
+        left: 46%;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
